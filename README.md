@@ -5,3 +5,13 @@
      - Angular, TypeScript (Material IO)
 - Back
      - Django, Python (Django rest framework, django-cors-headers)
+# Como executar
+1 - clone o projeto web (https://github.com/kulhado0/urna-web/)
+2 - Entre no projeto e abra o terminal
+3 - execute o comando "ng serve" ou "npm start"
+4 - clone este projeto
+5 - Entre no projeto 
+6 - Execute o comando "python manage.py runserver"
+7 - Espere um tempo para que a aplicação suba
+7 - Entre em http://localhost:4200/
+
