@@ -6,10 +6,10 @@
 - Back
      - Django, Python (Django rest framework, django-cors-headers)
 # Como executar
-- clone o projeto web (https://github.com/kulhado0/urna-web/)
+- Clone o projeto web (https://github.com/kulhado0/urna-web/)
 - Entre no projeto e abra o terminal
-- execute o comando "ng serve" ou "npm start"
-- clone este projeto
+- Execute o comando "ng serve" ou "npm start"
+- Clone este projeto
 - Entre no projeto 
 - Execute o comando "python manage.py runserver"
 - Espere um tempo para que a aplicação suba
