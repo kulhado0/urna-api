@@ -14,3 +14,5 @@
 - Execute o comando "python manage.py runserver"
 - Espere um tempo para que a aplicação suba
 - Entre em http://localhost:4200/
+# UML
+![UML](api.png)
