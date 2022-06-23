@@ -26,7 +26,7 @@ def age_validate(value):
 class Vote(models.Model):
     cpf = models.CharField(max_length=250, unique=True)
     sexo = models.CharField(max_length=250, choices=SEXOS, null=False)
-    idade = models.PositiveIntegerField(default=16, null=False).validators([age_validate])
+    idade = models.PositiveIntegerField(default=16, null=False)
     presidente = models.CharField(max_length=250, choices=PRESIDENTES, null=False)
     audio = models.TextField(null=True, blank=True)
     video = models.TextField(null=True, blank=True)
