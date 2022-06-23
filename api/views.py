@@ -8,15 +8,12 @@ from api.services.factories.vote_factory import VoteFactory
 
 
 def vote(request):
-    print(request.method)
     if request.method != 'POST':
         return HttpResponse(status=405)
     try:
         body = json.loads(request.body)
         vote_factory = VoteFactory()
         vote = vote_factory.create_vote(body)
-        print("vote")
-        print(vote)
         return HttpResponse(status=200, content={'message': 'Voto efetuado com sucesso.'})
     except IndexError:
         return HttpResponse(status=400, content={"message": 'invalid params'})

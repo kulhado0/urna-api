@@ -1,4 +1,5 @@
 from api.models import Vote
+from api.services.validators.vote_validator import VoteValidator
 
 
 class VoteBuilder:
@@ -10,6 +11,7 @@ class VoteBuilder:
         return self
 
     def with_age(self, age: int):
+        VoteValidator().validate_age(age)
         self.vote.idade = age
         return self
 

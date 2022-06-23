@@ -15,10 +15,7 @@ class VoteFactory:
             self.vote.with_president(body['presidente'])
 
         if 'idade' in body and type(body['idade']) == int:
-            age = body['idade']
-            if age < 16:
-                raise ValidationError(message='age')
-            self.vote.with_age(age)
+            self.vote.with_age(body['idade'])
 
         if 'sexo' in body and type(body['sexo']) == str:
             self.vote.with_sex(body['sexo'])
